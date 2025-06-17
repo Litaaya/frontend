@@ -33,7 +33,7 @@ export default function fashionanalyze() {
   const analyze = async () => {
     const form = new FormData()
     form.append('file', file)
-    const { data } = await axios.post('http://localhost:8000/analyze', form)
+    const { data } = await axios.post('https://litaaya-ts.hf.space/analyze', form)
     setResult(data)
   }
 
